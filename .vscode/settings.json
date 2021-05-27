@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Users\\moogl\\.virtualenvs\\django_react-PtH8-7Ir\\Scripts\\python.exe",
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
+    "files.associations": {
+        "*.js": "javascriptreact"
+    }
+}
