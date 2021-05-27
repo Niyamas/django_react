@@ -1,0 +1,1 @@
+This is a Django and React To Do List project that is a result of following Dennis Ivy's tutorial on YouTube: https://www.youtube.com/watch?v=W9BjUoot2Eo
