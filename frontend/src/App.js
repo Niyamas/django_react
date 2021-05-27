@@ -1,5 +1,5 @@
-import logo from './logo.svg'
-import './css/main.css'
+/* import logo from './logo.svg' */
+
 
 // Default React component
 /* function App() {
@@ -26,6 +26,8 @@ import './css/main.css'
 
 
 
+import React from 'react'
+import './css/main.css'
 
 class App extends React.Component {
 	render() {
@@ -35,7 +37,6 @@ class App extends React.Component {
 			<div className="container">
 				<div id="task-container">
 
-					{/* Form */}
 					<div id="form-wrapper">
 						<form id="form">
 							<div className="flex-wrapper">
@@ -58,10 +59,6 @@ class App extends React.Component {
 		)
 	}
 }
-
-
-
-
 
 
 
