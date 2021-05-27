@@ -2,9 +2,13 @@ import React from 'react'
 import './static/css/main.css'
 import { csrftoken } from './shared/get_cookies.js'
 
+// Import components
+//import TasksUI from './home/tasks_ui.js'
+
+// @todo: continue at @36:09 https://www.youtube.com/watch?v=w7ejDZ8SWv8
 
 
-class App extends React.Component {
+export default class App extends React.Component {
 
 	constructor(props) {
 
@@ -358,5 +362,5 @@ class App extends React.Component {
 }
 
 
-
-export default App
+// Add this functionality when calling the class above.
+// export default App

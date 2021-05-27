@@ -23,5 +23,5 @@ urlpatterns = [
     path('api/v1/', include('api.urls')),           # DRF urls
 
     path('', TemplateView.as_view(template_name='index.html')),         # Links to react index.html template (frontend/build/index.html)
-
+    
 ]
