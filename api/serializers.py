@@ -5,7 +5,7 @@ class TaskSerializer(serializers.Serializer):
     """Task Serializer."""
     id = serializers.IntegerField(read_only=True)
     title = serializers.CharField(max_length=200)
-    completed = serializers.BooleanField()
+    completed = serializers.BooleanField(default=False)
 
     def create(self, validated_data):
         """Adds create object functionality through the API to the Task model."""

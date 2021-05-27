@@ -44,9 +44,14 @@ INSTALLED_APPS = [
 
     # Django additions:
     'rest_framework',
+    'corsheaders',            # @ 19 min https://www.youtube.com/watch?v=W9BjUoot2Eo  
 ]
 
 MIDDLEWARE = [
+
+    # To connect to API: https://pypi.org/project/django-cors-headers/
+    'corsheaders.middleware.CorsMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -137,3 +142,9 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+"""Cors headers settings for accessing the API"""
+CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', cast=Csv())
